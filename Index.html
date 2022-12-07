@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>katie-kilroy.github.io</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<script type="text/javascript">
+    function getcur(){
+    var params = window.location;
+    // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+    let uuid = params.uuid; // "some_value"
+    let name = params.name;
+    let number = params.number;
+
+    document.write("hey");
+    document.getElementById("uuid").src = params;
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("number").innerHTML = number;
+    document.getElementById("demo").innerHTML =
+"The full URL of this page is:<br>" + window.location.href;
+}
+function GetURL() {
+        var gfg = document.URL;
+        document.getElementById("url").innerHTML = gfg;
+    }
+    </script>
+<body>
+
+<div class="container">
+
+  <div class="nav">
+<h2>Ollie</h2>
+<ul>
+  <li>sign up</li>
+  <li>search bikes</li>
+  <li>reserve a bike</li>
+  <li>about us</li>
+</ul>
+</div>
+
+<div class = "main">
+<h1>Ollie Bike Sharing</h1>
+<h3>Share your Pedals with the World.</h3>
+
+<button onclick="GetURL()"> Get URL </button>
+<p id="url"></p>
+<p>Here is a <a href="cities.html">list</a> of cities where you can find us. </p>
+<video width ="350" height = "250" controls>
+  <source src = "https://content.codecademy.com/projects/make-a-website/lesson-1/ollie.mp4">
+  </video>
+  </div>
+  </div>
+
+</body>
+</html>
